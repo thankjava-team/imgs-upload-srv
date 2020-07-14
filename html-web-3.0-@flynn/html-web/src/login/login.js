@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import './login.css';
+import './login.scss';
 import titleImg from '../img/title.png';
 // import disCheck from '../img/disCheck.png';
 import check from '../img/check.png';
@@ -18,13 +18,14 @@ class Login extends Component{
          <p>
            <input placeholder='请输入密码'/>
          </p>
-         <div>
-           <span>
+         <div className='stateFunc'>
+           <span className='readMe'>
              <img src={check} alt='记住密码'/>
              <span>记住我</span>
            </span>
-           <span>
+           <span className='findFunc'>
              <strong>忘记密码?</strong>
+             <strong> | </strong>
              <strong>点我注册</strong>
            </span>
          </div>
